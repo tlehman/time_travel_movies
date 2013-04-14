@@ -32,6 +32,21 @@ digraph time_travel_movies {
 	midnight_paris [label="Midnight in Paris",shape=box, style=rounded, color=purple];
 	causality_loops -> army_of_dark   [label=No];
 	causality_loops -> midnight_paris [label=No];
-
+	novikov [label="Novikov\nself-consistency\nprinciple",shape=box];
+	causality_loops -> novikov [label=No];
+	jigowatts [label="1.21 jigowatts at\n88 miles per hour",shape=box];
+	novikov -> jigowatts [label=No];
+	looper  [label="Looper", shape=box, style=rounded, color=pink];
+	thunder [label="A Sound of Thunder", shape=box, style=rounded, color=pink]; 
+	jigowatts -> looper  [label=No];
+	jigowatts -> thunder [label=No];
+	backfuture1 [label="Back to the Future 1", shape=box, style=rounded, color=yellow];
+	backfuture2 [label="Back to the Future 2", shape=box, style=rounded, color=yellow];
+	backfuture3 [label="Back to the Future 3", shape=box, style=rounded, color=yellow];
+	jigowatts -> backfuture1 [label=Yes];
+	jigowatts -> backfuture2 [label=Yes];
+	jigowatts -> backfuture3 [label=Yes];
+	
+	interact_self [label="Interaction with Self"];
 	
 }

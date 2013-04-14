@@ -9,7 +9,7 @@ comments, and I think that this data should be made into an easily
 modifiable format, like a wiki.
 
 The data will be in [DOT
- format](http://en.wikipedia.org/wiki/DOT_(graph_description_language))
+ format](http://www.graphviz.org/doc/info/lang.html)
  and anyone can fork and pull request their changes, that way there is
  a correction mechanism, allowing for a diagram that is eventually
  correct.
