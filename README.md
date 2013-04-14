@@ -13,3 +13,8 @@ The data will be in [DOT
  and anyone can fork and pull request their changes, that way there is
  a correction mechanism, allowing for a diagram that is eventually
  correct.
+
+ Here is the rendered image, each time the `time.gv` file is updated,
+ a post-commit hook will re-render the `time.png` file:
+
+![time travel in movies (rendered)](https://raw.github.com/tlehman/time_travel_movies/master/time.png)
