@@ -1,5 +1,23 @@
 digraph time_travel_movies {
-	main [label="Time travel in movies - SPOILER ALERT: SPOILERS BELOW"];
-	main -> Really;
-	m_changes_profession [label="Ivan Vasilievich\n Changes Profession"];
-	Really -> 
+	main [label="Time travel in movies\nSPOILER ALERT: SPOILERS BELOW",shape=box];
+	really [label="Really",shape=box,color=gray];
+	main -> really;
+	
+	m_changes_profession [label="Ivan Vasilievich\nChanges Profession",
+	   color=yellow,style=rounded,shape=box];
+	life_on_mars         [label="Life on Mars", color=blue, style=rounded, shape=box];
+	source_code          [label="Source Code", shape=box, style=rounded, color=pink];
+
+	really -> m_changes_profession [label=No];
+	really -> life_on_mars         [label=No];
+	really -> source_code          [label=No];
+
+	only_info [label="Only information travels in time", shape=box];
+	really -> only_info [label=Yes];
+	
+	single_timeline [label="Single timeline", shape=box];
+	future_sight    [label="Future sight", shape=box];
+	only_info -> single_timeline [label=No];
+	only_info -> future_sight [label=Yes];
+	
+}
