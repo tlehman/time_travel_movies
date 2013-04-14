@@ -15,6 +15,6 @@ The data will be in [DOT
  correct.
 
  Here is the rendered image, each time the `time.gv` file is updated,
- a post-commit hook will re-render the `time.png` file:
+ a pre-commit hook will re-render the `time.png` file:
 
 ![time travel in movies (rendered)](https://raw.github.com/tlehman/time_travel_movies/master/time.png)
