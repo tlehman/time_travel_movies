@@ -34,19 +34,28 @@ digraph time_travel_movies {
 	causality_loops -> midnight_paris [label=No];
 	novikov [label="Novikov\nself-consistency\nprinciple",shape=box];
 	causality_loops -> novikov [label=No];
+	
 	jigowatts [label="1.21 jigowatts at\n88 miles per hour",shape=box];
 	novikov -> jigowatts [label=No];
 	looper  [label="Looper", shape=box, style=rounded, color=pink];
 	thunder [label="A Sound of Thunder", shape=box, style=rounded, color=pink]; 
 	jigowatts -> looper  [label=No];
 	jigowatts -> thunder [label=No];
+	
 	backfuture1 [label="Back to the Future 1", shape=box, style=rounded, color=yellow];
 	backfuture2 [label="Back to the Future 2", shape=box, style=rounded, color=yellow];
 	backfuture3 [label="Back to the Future 3", shape=box, style=rounded, color=yellow];
+	
 	jigowatts -> backfuture1 [label=Yes];
 	jigowatts -> backfuture2 [label=Yes];
 	jigowatts -> backfuture3 [label=Yes];
-	
-	interact_self [label="Interaction with Self"];
+	novikov -> interact_self [label=Yes];
+	interact_self  [label="Interaction with Self",shape=box];
+	terminator1    [label="The Terminator",shape=box,style=rounded,color=pink];
+	premonition    [label="Premonition",shape=box,style=rounded,color=blue];
+	time_trav_wife [label="The Time Traveler's Wife",shape=box,style=rounded,color=blue];
+	interact_self -> terminator1    [label=No];
+	interact_self -> premonition    [label=No];
+	interact_self -> time_trav_wife [label=No];
 	
 }
