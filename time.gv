@@ -19,5 +19,8 @@ digraph time_travel_movies {
 	future_sight    [label="Future sight", shape=box];
 	only_info -> single_timeline [label=No];
 	only_info -> future_sight [label=Yes];
+
+	travel_to_past [label="Travel\nto the past", shape=box];
+	single_timeline -> travel_to_past [label=Yes];
 	
 }

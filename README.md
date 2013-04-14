@@ -14,7 +14,20 @@ The data will be in [DOT
  a correction mechanism, allowing for a diagram that is eventually
  correct.
 
- Here is the rendered image, each time the `time.gv` file is updated,
- a pre-commit hook will re-render the `time.png` file:
+## Auto-updating the image
+If you would like to have the image updated and added when you commit
+changes to `time.gv`, run (from the repository root). 
+
+**NOTE: To use auto-updating, you will need GraphViz and ImageMagick
+installed.**
+
+```
+./setup_pre_commit_render.sh
+```
+
+Then, any time you `git commit`, the `time.png` will be automatically
+rendered and added before the commit is finished.
+
+ Here is the rendered image:
 
 ![time travel in movies (rendered)](https://raw.github.com/tlehman/time_travel_movies/master/time.png)
