@@ -22,5 +22,16 @@ digraph time_travel_movies {
 
 	travel_to_past [label="Travel\nto the past", shape=box];
 	single_timeline -> travel_to_past [label=Yes];
+	multiverse [label=Multiverse,shape=box];
+	single_timeline -> multiverse [label=No];
+	planet_apes [label="Planet of the\nApes \[1968\]", shape=box, style=rounded, color=brown];
+	travel_to_past -> planet_apes [label=No];
+	causality_loops [label="Causality loops", shape=box];
+	travel_to_past -> causality_loops [label=Yes];
+	army_of_dark [label="Army of Darkness",shape=box, style=rounded, color=purple];
+	midnight_paris [label="Midnight in Paris",shape=box, style=rounded, color=purple];
+	causality_loops -> army_of_dark   [label=No];
+	causality_loops -> midnight_paris [label=No];
+
 	
 }
