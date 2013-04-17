@@ -57,5 +57,8 @@ digraph time_travel_movies {
 	interact_self -> terminator1    [label=No];
 	interact_self -> premonition    [label=No];
 	interact_self -> time_trav_wife [label=No];
-	
+	twelve_monkeys [label="Twelve Monkeys",shape=box,style=rounded];
+	harry_azkaban [label="Harry Potter and the\nPrisoner of Azkaban",shape=box,style=rounded];
+	interact_self -> twelve_monkeys [label=Yes];
+	interact_self -> harry_azkaban  [label=Yes];
 }
