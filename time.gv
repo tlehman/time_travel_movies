@@ -61,4 +61,21 @@ digraph time_travel_movies {
 	harry_azkaban [label="Harry Potter and the\nPrisoner of Azkaban",shape=box,style=rounded];
 	interact_self -> twelve_monkeys [label=Yes];
 	interact_self -> harry_azkaban  [label=Yes];
+	two_timelines [label="Two timelines,\ntangent universe",shape=box];
+	donnie_darko [label="Donnie Darko",shape=box,style=rounded,color=purple];
+	history_hard [label="History is\nhard to change",shape=box];
+	multiverse -> history_hard [label=Yes];
+	happy_accident [label="Happy Accidents",shape=box,style=rounded,color=purple];
+	time_machine   [label="The Time Machine (2002)",shape=box,style=rounded,color=yellow];
+	terminator3    [label="Terminator 3:\nRise of the Machines",shape=box,style=rounded,color=yellow];
+	history_hard -> happy_accident [label=Yes];
+	history_hard -> terminator3 [label=Yes];
+	history_hard -> time_machine [label=Yes];
+	backward_worldlines [label="Backward\n world lines",shape=box];
+	primer [label="Primer",shape=box,style=rounded,color=yellow];
+	backward_worldlines -> primer [label=Yes];
+	multiverse -> two_timelines [label=No];
+	two_timelines -> donnie_darko [label=Yes];
+	history_hard -> backward_worldlines [label=No];
+	
 }
