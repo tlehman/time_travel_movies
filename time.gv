@@ -77,5 +77,24 @@ digraph time_travel_movies {
 	multiverse -> two_timelines [label=No];
 	two_timelines -> donnie_darko [label=Yes];
 	history_hard -> backward_worldlines [label=No];
+	paycheck [label="Paycheck",shape=box,style=rounded,color=pink];
+	flash_fwd [label="Flash Forward",shape=box,style=rounded,color=pink];
+	next [label="Next",shape=box,style=rounded,color=yellow];
+	future_sight -> next;
+	future_sight -> flash_fwd;
+	future_sight -> paycheck;
+	non_travelers_remember [label="Non-travelers\nremember\nother timelines",shape=box];
+	backward_worldlines -> non_travelers_remember;
+	non_travelers_remember -> causality_loops [label=No];
+	blckadder   [label="Blackadder\nBack & Forth", shape=box, style=rounded, color=Yellow];
+	planet_apes [label="Planet of the\nApes (2001)",shape=box,style=rounded,color=Purple];
+	deja_vu     [label="Deja Vu",shape=box,style=rounded,color=Pink];
+	causality_loops -> blckadder [label=No];
+	causality_loops -> planet_apes [label=No];
+	causality_loops -> deja_vu [label=No];
+	terminator2 [label="Terminator 2:\nJudgement Day",shape=box,style=rounded,color=Pink];
+	causality_loops -> terminator [label=Yes];
+	
+	
 	
 }
