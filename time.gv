@@ -98,6 +98,7 @@ digraph time_travel_movies {
 	jacket [label="The Jacket", shape=box,style=rounded,color=Green];
 	non_travelers_remember -> jacket [label=Yes];
 	non_travelers_remember -> men_in_black_3 [label=Yes];
+	causality_loops -> terminator2 [label=Yes];
 	
 	
 	
