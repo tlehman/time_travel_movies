@@ -1,4 +1,6 @@
 digraph time_travel_movies {
+	overlap=false;
+	
 	main [label="Time travel in movies\nSPOILER ALERT: SPOILERS BELOW",shape=box];
 	really [label="Really",shape=box,color=gray];
 	main -> really;
