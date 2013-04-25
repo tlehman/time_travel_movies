@@ -94,6 +94,10 @@ digraph time_travel_movies {
 	causality_loops -> deja_vu [label=No];
 	terminator2 [label="Terminator 2:\nJudgement Day",shape=box,style=rounded,color=Pink];
 	causality_loops -> terminator [label=Yes];
+	men_in_black_3 [label="Men in Black 3", shape=box,style=rounded,color=Yellow];
+	jacket [label="The Jacket", shape=box,style=rounded,color=Green];
+	non_travelers_remember -> jacket [label=Yes];
+	non_travelers_remember -> men_in_black_3 [label=Yes];
 	
 	
 	
